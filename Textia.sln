@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33130.400
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Textia", "Textia.vcxproj", "{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Textia", "Textia.vcxproj", "{FE816238-B9AA-49D0-80D5-0B8C17546ADE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XAudio2", "..\Snake\XAudio2\XAudio2.vcxproj", "{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +15,27 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Debug|x64.ActiveCfg = Debug|x64
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Debug|x64.Build.0 = Debug|x64
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Debug|x86.ActiveCfg = Debug|Win32
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Debug|x86.Build.0 = Debug|Win32
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Release|x64.ActiveCfg = Release|x64
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Release|x64.Build.0 = Release|x64
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Release|x86.ActiveCfg = Release|Win32
-		{FDE10341-6D55-4D8B-978B-D3C8C39E0D18}.Release|x86.Build.0 = Release|Win32
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Debug|x64.ActiveCfg = Debug|x64
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Debug|x64.Build.0 = Debug|x64
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Debug|x86.Build.0 = Debug|Win32
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Release|x64.ActiveCfg = Release|x64
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Release|x64.Build.0 = Release|x64
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Release|x86.ActiveCfg = Release|Win32
+		{FE816238-B9AA-49D0-80D5-0B8C17546ADE}.Release|x86.Build.0 = Release|Win32
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Debug|x64.ActiveCfg = Debug|x64
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Debug|x64.Build.0 = Debug|x64
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Debug|x86.Build.0 = Debug|Win32
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Release|x64.ActiveCfg = Release|x64
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Release|x64.Build.0 = Release|x64
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Release|x86.ActiveCfg = Release|Win32
+		{CE3AE784-2DC9-4E76-B190-998FC63B9DCA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DA38A51C-6F0E-4DDB-867C-1C5C45FF4B0E}
+		SolutionGuid = {78A05576-3E3C-45EA-9C7D-53D9C4D602AB}
 	EndGlobalSection
 EndGlobal
