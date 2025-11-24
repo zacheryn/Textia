@@ -18,7 +18,7 @@ namespace Locations {
         std::shared_ptr<Utility> util{ nullptr };
 
     public:
-        location() noexcept = default;
+        constexpr location() noexcept = default;
 
         // Activates any events necessary upon visiting a location
         virtual void visit() noexcept = 0;
@@ -41,7 +41,27 @@ namespace Locations {
             return util;
         }
 
+        // Pauses the program until it takes in a keyboard input
+        void waitKey() const noexcept;
+
         virtual ~location() = default;
+    };
+
+
+    // The intro to the game (Shouldn't be revisited)
+    class intro final : public location {
+    private:
+
+    public:
+
+        constexpr intro() noexcept = default;
+
+        // Prints the title of the game
+        void printTitle() const noexcept;
+
+        void visit() noexcept override;
+
+        ~intro() override = default;
     };
 
 
@@ -54,7 +74,7 @@ namespace Locations {
 
     public:
 
-        startingForest() noexcept = default;
+        constexpr startingForest() noexcept = default;
 
         [[nodiscard]] static constexpr std::string_view getDesc() noexcept {
             return description;

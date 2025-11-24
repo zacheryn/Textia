@@ -1,13 +1,12 @@
 #include "utility.hpp"
 
-#include <thread>
 #include <iostream>
 
 Utility::Utility() noexcept
-: delay{ 50 }
+: characterDelay{ 50 }
 , musicVol{ 1.0 }
 , sfxVol{ 1.0 } {
-	setSettings();
+
 }
 
 void Utility::setSettings() noexcept {
@@ -16,7 +15,7 @@ void Utility::setSettings() noexcept {
 
 void Utility::slowRead(std::string_view s) const noexcept {
 	for (const char c : s) {
-		std::this_thread::sleep_for(delay);
+		std::this_thread::sleep_for(characterDelay);
 		std::cout << c << std::flush;
 	}
 }
