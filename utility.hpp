@@ -51,7 +51,7 @@ private:
 
 public:
 
-	Utility() noexcept;
+	constexpr Utility() noexcept;
 
 	void setSettings() noexcept;
 

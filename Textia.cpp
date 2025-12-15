@@ -8,7 +8,7 @@ int main()
 
 	Locations::intro i;
 	i.setUtility(sf.getUtility());
-	i.printTitle();
+	i.visit();
 
 	sf.visit();
 

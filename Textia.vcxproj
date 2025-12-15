@@ -126,11 +126,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="locations.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="Textia.cpp" />
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="locations.hpp" />
+    <ClInclude Include="player.hpp" />
     <ClInclude Include="utility.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

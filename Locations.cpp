@@ -25,7 +25,7 @@ void location::waitKey() const noexcept {
 void intro::printTitle() const noexcept {
     using namespace std::chrono_literals;
     // These are ASCII art of the title, they look much better when printed.
-    // I need to escape all of the '\' characters, so if makes it look jumbled here.
+    // I need to escape all of the '\' characters, so it makes it look jumbled here.
     std::cout << "         ,-.-.      ,----.              _,.----.      _,.---._            ___       ,----.  \n"
               << ",-..-.-./  \\==\\  ,-.--` , \\   _.-.    .' .' -   \\   ,-.' , -  `.   .-._ .'=.'\\   ,-.--` , \\ \n"
               << "|, \\=/\\=|- |==| |==|-  _.-` .-,.'|   /==/  ,  ,-'  /==/_,  ,  - \\ /==/ \\|==|  | |==|-  _.-` \n"
@@ -71,7 +71,20 @@ void intro::printTitle() const noexcept {
 }
 
 void intro::visit() noexcept {
-    util->slowRead("A brief description should probably go here");
+    // Just a check to make sure the intro isn't replayed
+    if (isVisited()) return;
+    ++numVisits;
+
+    printTitle();
+    util->slowRead("Welcome to my poorly made text-based adventure game! It will most likely be horribly written\n");
+    util->slowRead("and hard to follow or control, but I mean, that's definitely part of the intended experience.\n\n");
+    std::cout << Bnormal; util->slowRead("TUTORIAL\n"); std::cout << normal;
+    util->slowRead("I know text based adventures are pretty self-explanatory, but I'm saying this all anyway.\n");
+    util->slowRead("For each event you encounter, you will be given a list of numbered choices. Simply respond\n");
+    util->slowRead("with the number of whichever one of the listed choices you wish to make.\n\n");
+    util->slowRead("P.S. If at any point (after you choose a name) you want to view your inventory,\n");
+    util->slowRead("just type \'Inventory\' (not case sensitive).\n\n");
+    waitKey();
 }
 
 void startingForest::visit() noexcept {
